@@ -18,7 +18,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const RegisterForm = () => {
+
   const classes = useStyles();
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -42,10 +44,13 @@ const RegisterForm = () => {
         .min(6, "Tiene que contener un minimo de seis caracteres")
         .required("La contraseña es requerida"),
     }),
+
     onSubmit: async (values) => {
       console.log(values);
     },
+
   });
+
   return (
     <form className={classes.root} onSubmit={formik.handleSubmit}>
       <Grid className="padre">
