@@ -1,5 +1,5 @@
 import React from "react";
-import perritos from "../../../../assets/img/perritos.png";
+import perritos from "../../assets/img/perritos.png";
 import { Container, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
