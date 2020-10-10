@@ -55,7 +55,10 @@ function MyForm(props) {
 		<Form className={classes.root}>
 			<Grid className="padre">
 				<Grid className={["hijo", classes.hijo]}>
-					<Container container className="mt-2">
+					<Container container >
+						<br/>
+						<br/>
+						<br/>
 						<Grid xs={12} sm={12}>
 							Email{""}
 							<Field
@@ -82,6 +85,7 @@ function MyForm(props) {
 								{(message) => <div className="error"> {message} </div>}{" "}
 							</ErrorMessage>{" "}
 						</Grid>
+						<br/>
 						<Grid xs={12} sm={12}>
 							<button
 								type="submit"
@@ -92,7 +96,7 @@ function MyForm(props) {
 							>
 								INICIAR SESION{" "}
 							</button>{" "}
-							<Link to={"/cart"}>cart</Link>
+							<Link to={"/register"}>Registrarse</Link>
 						</Grid>{" "}
 					</Container>
 				</Grid>{" "}

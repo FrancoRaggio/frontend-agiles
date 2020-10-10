@@ -1,19 +1,23 @@
 import React from 'react'
+import { Grid } from "@material-ui/core";
 
-class Buscador extends React.Component {
+
+class Search extends React.Component {
     render() {
         return (
-            <form>
-                <div className="row">
-                    <div className="form-group col-md-4">
+
+
+            <div>
+                    <Grid container>
+                        <Grid xs={6} sm={8}>
                         <input type="text" class="form-control-lg" placeholder="Busca tu Mascota." />
-                    </div>
-                    <div className="form-group col-md-2">
+                        </Grid>
+                        <Grid xs={12} sm={4} >
                         <input type="submit" class="btn btn-lg btn-danger btn-block" value="Buscar..." />
-                    </div>
+                        </Grid>
+                    </Grid>
                 </div>
-            </form>
         )
     }
 }
-export default Buscador;
+export default Search;

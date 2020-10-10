@@ -6,6 +6,8 @@ import Home from "./modules/home/pages/Home";
 import About from "./modules/home/pages/About";
 import AddPost from "./modules/pet/pages/AddPost";
 import Map from "./modules/map/pages/Map";
+import Footer from "./modules/layouts/Footer";
+import Advert from "./modules/home/pages/Advert ";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="/map" component={Map} />
         </Switch>
       </Router>
+      
+      <Footer/>
     </div>
   );
 }

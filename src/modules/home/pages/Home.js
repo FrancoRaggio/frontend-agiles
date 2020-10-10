@@ -10,15 +10,15 @@ const Home = () => {
     return (
         <div className="padre">
             <Grid container>
-                <Grid xs={12} sm={2} >
-                    <p className="lead text-center"> <Logo /></p>
+                <Grid xs={12} sm={12} >
+                     <Logo />
                 </Grid>
-                <Grid xs={6} sm={10}>
-                    <Navs />
-                </Grid>
-                <Grid xs={6} sm={6} >
-                    <Search />
-                </Grid>
+                        <Grid xs={6} sm={8}>
+                            <Navs />
+                        </Grid>
+                        <Grid xs={12} sm={4} >
+                            <Search />
+                        </Grid>
             </Grid>
         </div>
     );
