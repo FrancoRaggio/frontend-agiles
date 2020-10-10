@@ -8,6 +8,7 @@ import AddPost from "./modules/pet/pages/AddPost";
 import Map from "./modules/map/pages/Map";
 import Footer from "./modules/layouts/Footer";
 import Advert from "./modules/home/pages/Advert ";
+import AddPet from "./modules/pet/pages/AddPet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -19,14 +20,15 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/Advert" component={Advert}/>
+          <Route exact path="/Advert" component={Advert} />
           <Route exact path="/add-post" component={AddPost} />
           <Route exact path="/map" component={Map} />
+          <Route exact path="/add-pet" component={AddPet} />
         </Switch>
       </Router>
-      
-      <Footer/>
-    </div>
+
+      <Footer />
+    </div >
   );
 }
 
