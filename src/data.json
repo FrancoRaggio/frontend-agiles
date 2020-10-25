@@ -1,0 +1,71 @@
+[
+
+    {
+        "title": "title",
+        "images": [{"url_image": "https://picsum.photos/id/545/640/480"}],
+        "date": "20-03-14",
+        "description": "description",
+        "likes": 1,
+        "phone": 213213213,
+        "address": "direccion",
+        "latitude": -23.343243,
+        "longitude": -54.232323,
+        "views": 0,
+        "user_id": 1,
+        "user": {
+            "avatar": "https://picsum.photos/id/95/640/480"
+        }
+    },
+    {
+        "title": "title2",
+        "images": [{"url_image": "https://picsum.photos/id/525/640/480"}],
+        "date": "20-03-14",
+        "description": "description",
+        "likes": 1,
+        "phone": 213213213,
+        "address": "direccion",
+        "latitude": -23.343243,
+        "longitude": -54.232323,
+        "views": 0,
+        "user_id": 1
+    },    
+    {
+        "title": "title3",
+        "images": [{"url_image": "https://picsum.photos/id/95/640/480"}],
+        "date": "20-03-14",
+        "description": "description",
+        "likes": 1,
+        "phone": 213213213,
+        "address": "direccion",
+        "latitude": -23.343243,
+        "longitude": -54.232323,
+        "views": 0,
+        "user_id": 1
+    },
+    {
+        "title": "title4",
+        "images": [{"url_image": "https://url"}],
+        "date": "20-03-14",
+        "description": "description",
+        "likes": 1,
+        "phone": 213213213,
+        "address": "direccion",
+        "latitude": -23.343243,
+        "longitude": -54.232323,
+        "views": 0,
+        "user_id": 1
+    },    
+    {
+        "title": "title5",
+        "images": [{"url_image": "https://url"}],
+        "date": "20-03-14",
+        "description": "description",
+        "likes": 1,
+        "phone": 213213213,
+        "address": "direccion",
+        "latitude": -23.343243,
+        "longitude": -54.232323,
+        "views": 0,
+        "user_id": 1
+    }
+]

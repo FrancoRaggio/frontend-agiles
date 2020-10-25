@@ -3,7 +3,6 @@ import FormPet from '../components/FormPet'
 import { Grid, TableFooter, Container } from "@material-ui/core";
 import "./../../home/styles/Home.css";
 import Logo from '../../layouts/Logo'
-import Footer from '../../layouts/Footer'
 
 const AddPet = () => {
     return (
@@ -23,7 +22,7 @@ const AddPet = () => {
                 </Grid>
                 </Grid>
                 </Container>
-                <Footer/>
+               
             </Grid>
         </div>
     );
