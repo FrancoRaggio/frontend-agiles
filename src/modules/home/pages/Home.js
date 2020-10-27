@@ -12,13 +12,13 @@ const Home = () => {
     return (
         <div className="padre">
             <Grid container>
-                <Grid xs={12} sm={12} >
+                <Grid xs={12} sm={1} >
                      <Logo />
                 </Grid>
-                <Grid xs={6} sm={5} >
+                <Grid xs={6} sm={8} >
                     <Navs />
                 </Grid>
-                <Grid xs={12} sm={4} >
+                <Grid xs={12} sm={3} >
                     <Search />
                 </Grid>
                 <Container>
