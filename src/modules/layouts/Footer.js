@@ -2,6 +2,7 @@ import React from "react";
 import perritos from "../../assets/img/perritos.png";
 import { Container, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import "../user/styles/footer.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -9,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
 }));
+
 
 const Footer = () => {
   const classes = useStyles();
@@ -19,4 +21,8 @@ const Footer = () => {
   );
 };
 
+
 export default Footer;
+
+
+
