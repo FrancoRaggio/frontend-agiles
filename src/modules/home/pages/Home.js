@@ -15,7 +15,7 @@ const Home = () => {
                 <Grid xs={12} sm={12} >
                      <Logo />
                 </Grid>
-                <Grid xs={5} sm={12} >
+                <Grid xs={4} sm={12} >
                     <Naavs />
                 </Grid>
             
