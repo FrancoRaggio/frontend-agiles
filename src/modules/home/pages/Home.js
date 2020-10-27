@@ -15,7 +15,7 @@ const Home = () => {
                 <Grid xs={12} sm={12} >
                      <Logo />
                 </Grid>
-                <Grid xs={6} sm={8}>
+                <Grid xs={6} sm={5} >
                     <Navs />
                 </Grid>
                 <Grid xs={12} sm={4} >
@@ -29,10 +29,8 @@ const Home = () => {
                             </Grid>
                         ))}
                     </Grid>
-                </Container>
-               
+                </Container>              
             </Grid>
-
         </div>
     );
 }
