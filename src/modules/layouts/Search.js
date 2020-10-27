@@ -6,7 +6,6 @@ class Search extends React.Component {
     render() {
         return (
 
-
             <div>
                     <Grid container>
                         <Grid xs={6} sm={8}>
