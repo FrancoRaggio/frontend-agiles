@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="padre">
             <Grid container>
-                <Grid xs={12} sm={12} >
+                <Grid xs={12} sm={1} >
                      <Logo />
                 </Grid>
                 <Grid xs={4} sm={12} >

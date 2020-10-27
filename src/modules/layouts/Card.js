@@ -12,10 +12,11 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -75,11 +76,17 @@ export default function RecipeReviewCard({item}) {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
         </IconButton>
         <IconButton aria-label="share">
-          <ShareIcon />
+          
         </IconButton>
+        <BottomNavigation
+      showLabels
+      className={classes.root}
+    >
+      <BottomNavigationAction label="Likes" icon={<FavoriteIcon />} />
+      <BottomNavigationAction label="Localizacion" icon={<LocationOnIcon />} />
+    </BottomNavigation>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
@@ -93,9 +100,9 @@ export default function RecipeReviewCard({item}) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Mapa:</Typography>
+          <Typography paragraph>Comentarios</Typography>
           <Typography paragraph>
-            Mapa
+            Enviar WS
           </Typography>
         </CardContent>
       </Collapse>
