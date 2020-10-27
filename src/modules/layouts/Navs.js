@@ -21,7 +21,6 @@ class Navs extends React.Component {
         					</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<Link class="dropdown-item" to={"/add-pet"}>Publicar Mascota</Link>
-						
 								
 							</div>
 						</li>
