@@ -1,8 +1,7 @@
 import React from 'react';
 import { Grid, Container } from "@material-ui/core";
 import Logo from '../../layouts/Logo'
-import Naavs from '../../layouts/Naavs'
-import Search from '../../layouts/Search'
+import Navs from '../../layouts/Navs'
 import "./../styles/Home.css";
 import data from '../../../data.json'
 import Card from '../../layouts/Card'
@@ -12,13 +11,12 @@ const Home = () => {
     return (
         <div className="padre">
             <Grid container>
-                <Grid xs={12} sm={1} >
-                     <Logo />
+                <Grid xs={12} sm={12} >
+                    <Navs /> 
                 </Grid>
-                <Grid xs={4} sm={12} >
-                    <Naavs />
-                </Grid>
-            
+                <Grid xs={5} sm={12} >
+                    <Logo />
+                </Grid>           
                 <Container>
                     <Grid container>
                         {info.map( item => (
