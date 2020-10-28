@@ -6,6 +6,13 @@ import { useHistory } from "react-router-dom";
 import { Container, Grid, TextField, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { RepositoryFactory } from "./../../../../repositories/RepositoryFactory";
+import {
+  createMuiTheme,
+  withStyles,
+  ThemeProvider,
+} from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import { green } from "@material-ui/core/colors";
 
 const authRepository = RepositoryFactory.get("auth");
 
@@ -16,9 +23,11 @@ const useStyles = makeStyles((theme) => ({
   hijo: {
     alignContent: "center",
   },
+  error: {
+    color: "red",
+  },
 }));
 const RegisterForm = () => {
-
   const classes = useStyles();
 
   const formik = useFormik({
@@ -48,15 +57,56 @@ const RegisterForm = () => {
     onSubmit: async (values) => {
       console.log(values);
     },
-
+  });
+  const BootstrapButton = withStyles({
+    root: {
+      boxShadow: "none",
+      textTransform: "none",
+      fontSize: 16,
+      padding: "6px 12px",
+      border: "2px solid",
+      lineHeight: 1.5,
+      backgroundColor: "#0063cc",
+      borderColor: "#0063cc",
+      fontFamily: [
+        "-apple-system",
+        "BlinkMacSystemFont",
+        '"Segoe UI"',
+        "Roboto",
+        '"Helvetica Neue"',
+        "Arial",
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(","),
+      "&:hover": {
+        backgroundColor: "#0069d9",
+        borderColor: "#0062cc",
+        boxShadow: "none",
+      },
+      "&:active": {
+        boxShadow: "none",
+        backgroundColor: "#0062cc",
+        borderColor: "#005cbf",
+      },
+      "&:focus": {
+        boxShadow: "0 0 0 0.2rem rgba(0,123,255,.5)",
+      },
+    },
+  })(Button);
+  const theme = createMuiTheme({
+    palette: {
+      primary: green,
+    },
   });
 
   return (
     <form className={classes.root} onSubmit={formik.handleSubmit}>
       <Grid className="padre">
         <Grid className={["hijo", classes.hijo]}>
-          <Container container className="mt-2">
-            <Grid xs={12} sm={12}>
+          <Container style={{ maxHeight: 1200 }} container className="mt-2">
+            <Grid xs={12}>
               Nombre{""}
               <TextField
                 name="name"
@@ -67,7 +117,9 @@ const RegisterForm = () => {
                 value={formik.values.name}
               />
               {formik.touched.name && formik.errors.name ? (
-                <Typography severity="error">{formik.errors.name}</Typography>
+                <Typography className={classes.error} severity="error">
+                  {formik.errors.name}
+                </Typography>
               ) : null}
             </Grid>
             <Grid xs={12} sm={12}>
@@ -81,7 +133,7 @@ const RegisterForm = () => {
                 value={formik.values.lastname}
               />
               {formik.touched.lastname && formik.errors.lastname ? (
-                <Typography severity="error">
+                <Typography className={classes.error} severity="error">
                   {formik.errors.lastname}
                 </Typography>
               ) : null}
@@ -97,7 +149,9 @@ const RegisterForm = () => {
                 value={formik.values.phone}
               />
               {formik.touched.phone && formik.errors.phone ? (
-                <Typography severity="error">{formik.errors.phone}</Typography>
+                <Typography className={classes.error} severity="error">
+                  {formik.errors.phone}
+                </Typography>
               ) : null}
             </Grid>
             <Grid xs={12} sm={12}>
@@ -111,7 +165,7 @@ const RegisterForm = () => {
                 value={formik.values.username}
               />
               {formik.touched.username && formik.errors.username ? (
-                <Typography severity="error">
+                <Typography className={classes.error} severity="error">
                   {formik.errors.username}
                 </Typography>
               ) : null}
@@ -127,7 +181,9 @@ const RegisterForm = () => {
                 value={formik.values.email}
               />
               {formik.touched.email && formik.errors.email ? (
-                <Typography severity="error">{formik.errors.email}</Typography>
+                <Typography className={classes.error} severity="error">
+                  {formik.errors.email}
+                </Typography>
               ) : null}
             </Grid>
             <Grid xs={12} sm={12}>
@@ -141,14 +197,23 @@ const RegisterForm = () => {
                 value={formik.values.password}
               />
               {formik.touched.password && formik.errors.password ? (
-                <Typography severity="error">
+                <Typography className={classes.error} severity="error">
                   {formik.errors.password}
                 </Typography>
               ) : null}
             </Grid>
-            <Grid xs={12} sm={12}>
-              <button type="submit">Registrarse </button>{" "}
-            </Grid>{" "}
+            <Grid style={{ marginTop: 8, marginBottom: 8 }} xs={12} sm={12}>
+              <ThemeProvider theme={theme}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className={classes.margin}
+                  type="submit"
+                >
+                  Registrarse
+                </Button>
+              </ThemeProvider>
+            </Grid>
           </Container>
         </Grid>{" "}
       </Grid>{" "}
