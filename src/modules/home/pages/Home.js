@@ -5,14 +5,17 @@ import Navs from '../../layouts/Navs'
 import "./../styles/Home.css";
 import data from '../../../data.json'
 import Card from '../../layouts/Card'
+import Info from "../../layouts/Info";
 const info = data
 
 const Home = () => {
     return (
         <div className="padre">
+            
             <Grid container>
                 <Grid xs={12} sm={12} >
                     <Navs /> 
+                    <Info></Info>
                 </Grid>
                 <Grid xs={5} sm={12} >
                     <Logo />
@@ -27,6 +30,7 @@ const Home = () => {
                     </Grid>
                 </Container>              
             </Grid>
+            
         </div>
     );
 }

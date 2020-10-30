@@ -30,7 +30,7 @@ class Naavs extends React.Component {
       <Link class="nav-link" to={"/about"}>SobreNosotros</Link>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Mi perfil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/profile">Mi perfil <span class="sr-only">(current)</span></a>
       </li>
       
     </ul>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logoimg from '../../assets/logo/Logo.png'
+import logoimg from '../../assets/logo/logo.png'
 import { Link, useHistory } from "react-router-dom";
 
 class Logo extends React.Component {

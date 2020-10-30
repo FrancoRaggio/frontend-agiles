@@ -11,6 +11,8 @@ import Advert from "./modules/home/pages/Advert ";
 import AddPet from "./modules/pet/pages/AddPet";
 import RemovePet from "./modules/home/pages/RemovePet";
 import "../src/modules/home/styles/Home.css";
+import "../src/modules/user/styles/Profile.css";
+import Profile from "./modules/user/auth/pages/Profile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <Route exact path="/map" component={Map} />
           <Route exact path="/add-pet" component={AddPet} />
           <Route exact path="/removePet" component={RemovePet} />
+          <Route exact path="/profile" component={Profile} />
         </Switch>
       </Router>                 
       </div>
