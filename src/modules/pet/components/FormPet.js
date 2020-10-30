@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 class FormPet extends React.Component {
     render() {
         return (
@@ -9,7 +10,7 @@ class FormPet extends React.Component {
 
   <div class="form-row">
     <div class="form-group col-md-3">
-      <label for="inputEmail5"><strong>Nombre de la mascota</strong></label>
+      <label for="inputEmail5"><strong>Nombre</strong></label>
       <input type="email" class="form-control" id="inputEmail4"/>
     </div>
     <div class="form-group col-md-3">
@@ -37,9 +38,9 @@ class FormPet extends React.Component {
         <label for="inputAddress"><strong>Raza</strong></label>
         <input type="text" class="form-control" id="inputAddress" placeholder="..."/>
     </div>
-    <div class="form-group col-md-3">
-      <label for="inputState"><strong>Color</strong></label>
-      <select id="inputState" class="form-control">
+  <div class="form-group col-md-3">
+    <label for="inputState"><strong>Color</strong></label>
+    <select id="inputState" class="form-control">
         <option selected>...</option>
         <option>Negro</option>
         <option>Marron</option>
@@ -48,10 +49,10 @@ class FormPet extends React.Component {
         <option>Azul</option>
         <option>rojo</option>
         <option>otro</option>
-      </select>
-    </div>
+    </select>
+  </div>
     
-    <div class="form-group col-md-3">
+  <div class="form-group col-md-3">
       <label for="inputState"><strong>Tamaño</strong></label>
       <select id="inputState" class="form-control">
         <option selected>...</option>
@@ -60,7 +61,7 @@ class FormPet extends React.Component {
         <option>Grande</option>
         
       </select>
-    </div>
+  </div>
    
   
   </div>
@@ -101,11 +102,13 @@ class FormPet extends React.Component {
 
   </div>
   <div class="form-group col-md-9">
-  <button type="button" class="btn btn-primary "  data-toggle="button" aria-pressed="false">
-  Publicar
-</button>
+  
+  <button type="button" class="btn btn-primary btn-sm">Cancelar</button>
+<button type="button" class="btn btn-secondary btn-sm">Publicar</button>
 </div>
+
 </form>
+
 
         )
     }
