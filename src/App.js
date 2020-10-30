@@ -16,7 +16,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div style={{ position: 'relative', zIndex: '2' }}>
       <Router>
         <Switch>
           <Route exact path="/login" component={Auth} />
@@ -30,10 +29,7 @@ function App() {
           <Route exact path="/removePet" component={RemovePet} />
         </Switch>
       </Router>                 
-      </div>
-      <div style={{ position: 'relative', zIndex: '1' }}>
           <Footer />
-      </div> 
     </div >
   );
 }
