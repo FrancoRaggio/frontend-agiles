@@ -1,0 +1,10 @@
+#submenu01{
+    height:30px;
+    margin-bottom:80px;
+    border-bottom:#CCC dotted 2px;
+    width:1000px;
+    float:left;
+    }
+    
+    #submenu01 ul{margin-left:700px;*}
+    #submenu01 ul li{ float:left; margin-left:10px;}
