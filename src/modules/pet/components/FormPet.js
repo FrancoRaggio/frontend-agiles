@@ -4,6 +4,7 @@ import React from 'react'
 
 class FormPet extends React.Component {
     render() {
+      const customColumnStyle = { width: 200}
         return (
 
 <form>
@@ -94,8 +95,8 @@ class FormPet extends React.Component {
 
 <label for="exampleFormControlTextarea1" class="form-row" class="col-md-4"> <strong>Descripcion</strong></label>
 <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-<div class="form-group col-md-3" >
-<label for="exampleFormControlFile1" > <strong>Cargar imagen</strong></label>
+<div class="form-group col-md-4" >
+<label for="exampleFormControlFile1"><strong>Cargar imagen</strong></label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1"/>
     </div>
 </div>
