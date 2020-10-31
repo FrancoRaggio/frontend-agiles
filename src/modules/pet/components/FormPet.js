@@ -43,9 +43,6 @@ const FormPet = (props) => {
             <option>Negro</option>
             <option>Marron</option>
             <option>Blanco</option>
-            <option>Verde</option>
-            <option>Azul</option>
-            <option>rojo</option>
             <option>otro</option>
           </select>
         </div>
@@ -54,8 +51,8 @@ const FormPet = (props) => {
           <label style={customColumnStyle} for="inputState"><strong>Tamaño</strong></label>
           <select style={customColumnStyle} id="inputState" class="form-control">
             <option selected>...</option>
-            <option>Pequeña</option>
-            <option>Mediana</option>
+            <option>Pequeño</option>
+            <option>Mediano</option>
             <option>Grande</option>
           </select>
         </div>

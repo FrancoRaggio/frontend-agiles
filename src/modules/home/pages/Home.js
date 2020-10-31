@@ -5,7 +5,6 @@ import Navs from '../../layouts/Navs'
 import "./../styles/Home.css";
 import data from '../../../data.json'
 import Card from '../../layouts/Card'
-
 const Home = () => {
 
     const [posts, setPosts] = useState(data)
@@ -17,6 +16,7 @@ const Home = () => {
                 <Grid xs={12} sm={12} >
                     <Navs posts={posts} setPosts={setPosts} /> 
                 </Grid>
+                
                 <Grid xs={5} sm={12} >
                     <Logo />
                 </Grid>           

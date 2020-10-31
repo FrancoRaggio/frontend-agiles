@@ -31,7 +31,7 @@ export default function AlertDialogSlide() {
   
   return (
     <div>
-      <Box mt={2}ml={138.5}>
+      <Box mt={1}ml={13}>
       <Button size="small" variant="outlined" color="success" onClick={handleClickOpen}>
         Editar
       </Button>

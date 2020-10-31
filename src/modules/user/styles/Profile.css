@@ -6,8 +6,8 @@ div#fondo {
 
 div#perfil {
     margin-top: 50px;
-    margin-left: 150px;
-    background-color: seagreen;
+    margin-left: 100px;
+    background-color:  rgba(15, 11, 0, 0.562);
     width: 1200px;
     height: 320px;
 
@@ -21,8 +21,8 @@ div#datos {
 }
 div#perfil1 {
     margin-top: 300px;
-    margin-left: 150px;
-    background-color: green;
+    margin-left: 100px;
+    background-color: rgba(15, 11, 0, 0.562);
     width: 1200px;
     height: 550px;
 
@@ -31,20 +31,20 @@ div#perfil1 {
 div#datos1 {
     text-align: left;
     margin-top: -200px;
-    margin-left: 0px;
+    margin-left: 150px;
     
 
 }
 
 div#perdidos{
-    margin-top: -260px;
-    margin-left: 900px;
+    margin-top: -330px;
+    margin-left: 200px;
 
 }
 
 div#miperfil{
     margin-top: -200px;
-    margin-left: 900px;
+    margin-left: 800px;
 
 }
 

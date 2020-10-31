@@ -38,7 +38,6 @@ export default function CenteredGrid() {
         <Grid container>
           <Grid xs={12} sm={12} >
             <Navs />
-            <Info />
           </Grid>
         </Grid>
 
