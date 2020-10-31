@@ -48,7 +48,7 @@ function MyForm(props) {
       .post(form)
       .then((response) => {
         console.log(response.data);
-        localStorage.setItem("token", response.data);
+        localStorage.setItem("token", response.data.token);
         const tokenDecoded = jwt_decode(response.data.token);
         console.log(tokenDecoded);
         history.push("/");
@@ -105,8 +105,8 @@ function MyForm(props) {
       <Grid className="padre">
         <Grid className={["hijo", classes.hijo]}>
           <Container container>
-            <div>
-              <img src={Logo} alt="Logo" width="150" height="150" />
+            <div className="ml-4">
+              <img src={Logo} alt="Logo" width="250" height="150" />
             </div>
             <Grid xs={12} sm={12}>
               Usuario / email{""}
@@ -150,16 +150,6 @@ function MyForm(props) {
                   </Button>
                 </ThemeProvider>
               </div>
-              <button
-                type="submit"
-                className={`submit ${
-                  isSubmitting || !isValid ? "disabled" : ""
-                }`}
-                disabled={isSubmitting || !isValid}
-                onClick={authForm}
-              >
-                INICIAR SESION{" "}
-              </button>{" "}
               <Link to={"/register"}>Registrarse</Link>
             </Grid>{" "}
           </Container>

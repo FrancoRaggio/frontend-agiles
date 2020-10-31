@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyLocation = ({ setCenter, setMarker }) => {
+const MiUbicacion = ({ setCenter, setMarker }) => {
     const findMe = () => {
         if (!navigator.geolocation) {
             alert('El navegador no soporta geolocalizacion');
@@ -25,14 +25,14 @@ const MyLocation = ({ setCenter, setMarker }) => {
     return (
         <button
             type="button"
-            className="btn  btn-block btn-success mb-4 col-md-12 mt-4 col-md-offset-2 "
+            className="btn btn-info"
             onClick={findMe}
         >
-            Mi.Ubicación
+            Mi Ubicacion
         </button>
 
     );
 
 };
 
-export default MyLocation;
+export default MiUbicacion;

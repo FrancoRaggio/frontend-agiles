@@ -8,21 +8,21 @@ const Mapquest = ({ height, width, center, tileLayer, zoom, apiKey }) => {
 
         //inicializar mapa
         const map = window.L.mapquest.map('map', {
-            center,
+            center, 
             layers: window.L.mapquest.tileLayer(tileLayer),
             zoom
         });
-
+        
         map.addControl(window.L.mapquest.control());
 
-    }, []);
-
-
-    return (
-        <div id="map" style={{ width, height }}>
+    }, []); 
+    
+    
+    return(
+            <div id="map" style={{ width, height }}>
             <p>Cargando mapa...</p>
-        </div>
-
+            </div>
+            
 
     );
 

@@ -24,15 +24,15 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/Advert" component={Advert} />
+          <Route exact path="/advert" component={Advert} />
           <Route exact path="/add-post" component={AddPost} />
           <Route exact path="/map" component={Map} />
           <Route exact path="/add-pet" component={AddPet} />
           <Route exact path="/removePet" component={RemovePet} />
           <Route exact path="/profile" component={Profile} />
         </Switch>
-      </Router>                 
-          <Footer />
+      </Router>
+      <Footer />
     </div >
   );
 }

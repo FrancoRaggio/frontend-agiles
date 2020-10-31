@@ -34,72 +34,72 @@ export default function CenteredGrid() {
 
   return (
     <div>
-    <div id="fondo" >
-      <Grid container>
-      <Grid xs={12} sm={12} >
-        <Navs /> 
-        <Info/>
-        </Grid>
-        </Grid>  
-      
-        <div id="perfil"> 
-        <h1><br/></h1>
-        <Grid  xs={4}>
-        <img height="200" src={ProfilePhoto} />
-        
+      <div id="fondo" >
+        <Grid container>
+          <Grid xs={12} sm={12} >
+            <Navs />
+            <Info />
+          </Grid>
         </Grid>
 
-        <EditButton/>
+        <div id="perfil">
+          <h1><br /></h1>
+          <Grid xs={4}>
+            <img height="200" src={ProfilePhoto} />
 
-        <div id="miperfil">
-        <h1>
-              Mi<br/>
+          </Grid>
+
+          <EditButton />
+
+          <div id="miperfil">
+            <h1>
+              Mi<br />
               Perfil
             </h1>
-        </div>
-
-        <div id="datos">
-          <h5>
-            <h3>Datos personales:</h3>
-            Nombre: Lionel Andres <br/>
-            Apellido: Messi<br/>
-            Edad: 18 años <br/>
-            Domicilio: 08860 Castelldefels, Barcelona, España <br/>
-            Correo: liomessi_10@gmail.com<br/>
-            Telefono: 1530413087 <br/>
-            </h5>
-          </div> 
           </div>
 
-          <div id="perfil1">
+          <div id="datos">
+            <h5>
+              <h3>Datos personales:</h3>
+            Nombre: Lionel Andres <br />
+            Apellido: Messi<br />
+            Edad: 33 años <br />
+            Domicilio: 08860 Castelldefels, Barcelona, España <br />
+            Correo: liomessi_10@gmail.com<br />
+            Telefono: 1530413087 <br />
+            </h5>
+          </div>
+        </div>
+
+        <div id="perfil1">
 
           <div id="datos1">
 
-          <Grid container>
-                        {info.map( item => (
-                            <Grid className="m-5" xs={6} sm={3}>      
-                                <Card item={item}/>
-                            </Grid>
-                        ))}
-                    </Grid>
-            
-         
-          </div> 
+            <Grid container>
+              {info.map(item => (
+                <Grid className="m-5" xs={6} sm={3}>
+                  <Card item={item} />
+                </Grid>
+              ))}
+            </Grid>
+
+
+          </div>
 
           <div id="perdidos">
-            
+
             <h1>
-              Mascotas<br/>
+              Mascotas<br />
               Perdidas
             </h1>
 
           </div>
 
-          </div>    
-             
-        
-      
-      </div>
         </div>
+
+
+
+      </div>
+    </div>
   );
 }
