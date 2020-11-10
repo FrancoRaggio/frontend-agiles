@@ -3,6 +3,10 @@ import { withFormik, Field, ErrorMessage, Form } from "formik";
 import "../../styles/Form.css";
 import { Link, useHistory } from "react-router-dom";
 import { Container, Grid, CssBaseline, Typography } from "@material-ui/core";
+import Login from './../../../../assets/logo/image.png'
+import Navs from '../../../layouts/Navs' 
+import Logo from '../../../layouts/Logo'
+import Perrito from './../../../../assets/logo/mascot.png'
 import { RepositoryFactory } from "./../../../../repositories/RepositoryFactory";
 import jwt_decode from "jwt-decode";
 import {
@@ -13,7 +17,7 @@ import {
 } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { green } from "@material-ui/core/colors";
-import Logo from "../../../../assets/logo/logo.png";
+
 
 const authRepository = RepositoryFactory.get("auth");
 
@@ -102,14 +106,38 @@ function MyForm(props) {
 
   return (
     <Form className={classes.root}>
+      <Navs />
+      
+      
       <Grid className="padre">
+      <Grid xs={12} sm={12} >
+                    <p className="lead text-center"> <Logo /></p>
+                </Grid>
+                <Grid xs={12} sm={5} >
+                            <Container>
+                            <img height="400" src={Perrito} />
+
+                                
+                            </Container>
+                  </Grid>
+                 
+          
+      
         <Grid className={["hijo", classes.hijo]}>
+       
           <Container container>
-            <div className="ml-4">
-              <img src={Logo} alt="Logo" width="250" height="150" />
+          
+            <div className="ml-1">
+              
+              < img height="300" src={Login} />
+             
             </div>
+            
+           
             <Grid xs={12} sm={12}>
+            <strong>
               Usuario / email{""}
+              </strong>
               <Field
                 name="email"
                 type="email"
@@ -122,7 +150,9 @@ function MyForm(props) {
               </ErrorMessage>{" "}
             </Grid>
             <Grid xs={12} sm={12}>
+            <strong>
               Contraseña{" "}
+              </strong>
               <Field
                 name="password"
                 type="password"
@@ -146,15 +176,24 @@ function MyForm(props) {
                     disabled={isSubmitting || !isValid}
                     onClick={authForm}
                   >
+                    <strong>
                     INICIAR SESION
+                    </strong>
                   </Button>
                 </ThemeProvider>
               </div>
               <Link to={"/register"}>Registrarse</Link>
             </Grid>{" "}
+            
+           
           </Container>
+          
+          
         </Grid>{" "}
+        
+        
       </Grid>{" "}
+                 
     </Form>
   );
 }
