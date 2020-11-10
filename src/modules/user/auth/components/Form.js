@@ -45,7 +45,7 @@ function MyForm(props) {
 
   const authForm = () => {
     authRepository
-      .post(form)
+      .auth(form)
       .then((response) => {
         console.log(response.data);
         localStorage.setItem("token", response.data.token);

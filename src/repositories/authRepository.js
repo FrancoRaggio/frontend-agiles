@@ -1,7 +1,7 @@
 import Repository from "../Repository";
 const resource = "/auth";
 export default {
-  post(DTO) {
+  auth(DTO) {
     console.log(DTO);
     return Repository.post(`${resource}`, DTO);
   },
