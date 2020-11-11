@@ -22,6 +22,7 @@ import { green } from "@material-ui/core/colors";
 const authRepository = RepositoryFactory.get("auth");
 
 const useStyles = makeStyles((theme) => ({
+
   root: {
     width: "100%",
   },
@@ -113,14 +114,7 @@ function MyForm(props) {
       <Grid xs={12} sm={12} >
                     <p className="lead text-center"> <Logo /></p>
                 </Grid>
-                <Grid xs={12} sm={5} >
-                            <Container>
-                            <img height="400" src={Perrito} />
-
-                                
-                            </Container>
-                  </Grid>
-                 
+              
           
       
         <Grid className={["hijo", classes.hijo]}>
@@ -164,8 +158,10 @@ function MyForm(props) {
                 {(message) => <div className="error"> {message} </div>}{" "}
               </ErrorMessage>{" "}
             </Grid>
+            
             <br />
             <Grid xs={12} sm={12}>
+              
               <div>
                 <ThemeProvider theme={theme}>
                   <Button
@@ -185,7 +181,7 @@ function MyForm(props) {
               <Link to={"/register"}>Registrarse</Link>
             </Grid>{" "}
             
-           
+            
           </Container>
           
           
