@@ -4,7 +4,7 @@ import "../../styles/Form.css";
 import { Link, useHistory } from "react-router-dom";
 import { Container, Grid, CssBaseline, Typography } from "@material-ui/core";
 import Login from './../../../../assets/logo/image.png'
-import Navs from '../../../layouts/Navs' 
+import Navs from '../../../layouts/Navs'
 import Logo from '../../../layouts/Logo'
 import Perrito from './../../../../assets/logo/mascot.png'
 import { RepositoryFactory } from "./../../../../repositories/RepositoryFactory";
@@ -108,29 +108,29 @@ function MyForm(props) {
   return (
     <Form className={classes.root}>
       <Navs />
-      
-      
+
+
       <Grid className="padre">
-      <Grid xs={12} sm={12} >
-                    <p className="lead text-center"> <Logo /></p>
-                </Grid>
-              
-          
-      
+        <Grid xs={12} sm={12} >
+          <p className="lead text-center"> <Logo /></p>
+        </Grid>
+
+
+
         <Grid className={["hijo", classes.hijo]}>
-       
+
           <Container container>
-          
+
             <div className="ml-1">
-              
+
               < img height="300" src={Login} />
-             
+
             </div>
-            
-           
+
+
             <Grid xs={12} sm={12}>
-            <strong>
-              Usuario / email{""}
+              <strong>
+                Usuario / email{""}
               </strong>
               <Field
                 name="email"
@@ -144,8 +144,8 @@ function MyForm(props) {
               </ErrorMessage>{" "}
             </Grid>
             <Grid xs={12} sm={12}>
-            <strong>
-              Contraseña{" "}
+              <strong>
+                Contraseña{" "}
               </strong>
               <Field
                 name="password"
@@ -158,10 +158,10 @@ function MyForm(props) {
                 {(message) => <div className="error"> {message} </div>}{" "}
               </ErrorMessage>{" "}
             </Grid>
-            
+
             <br />
             <Grid xs={12} sm={12}>
-              
+
               <div>
                 <ThemeProvider theme={theme}>
                   <Button
@@ -173,23 +173,23 @@ function MyForm(props) {
                     onClick={authForm}
                   >
                     <strong>
-                    INICIAR SESION
+                      INICIAR SESION
                     </strong>
                   </Button>
                 </ThemeProvider>
               </div>
-              <Link to={"/register"}>Registrarse</Link>
+              <Link to={"/register"}> <strong>Registrarse </strong></Link>
             </Grid>{" "}
-            
-            
+
+
           </Container>
-          
-          
+
+
         </Grid>{" "}
-        
-        
+
+
       </Grid>{" "}
-                 
+
     </Form>
   );
 }

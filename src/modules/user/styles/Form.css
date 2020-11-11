@@ -7,12 +7,12 @@
 }
 
 .padre {
-    background: linear-gradient(180deg, rgb(126, 197, 126), rgb(223, 223, 206));
+    background: linear-gradient(180deg, rgb(140, 197, 140), rgb(223, 223, 206));
     height: 500px;
 }
 
 .hijo {
-    background:rgb(177, 158, 105);
+    background:rgba(110, 91, 62, 0.904);
     min-height: 700px;
     max-height: 1000px;
     width: 700px;
