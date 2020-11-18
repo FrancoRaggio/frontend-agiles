@@ -1,11 +1,16 @@
 .padre {
+    background-image: url("../../../assets/logo/probando.jpg");
+    min-height: 1200px;
+    max-height: 2500px;
+}
+.login {
     background-image: url("../../../assets/logo/fondo.png");
     min-height: 1200px;
     max-height: 2500px;
 }
 
 .about {
-    background: linear-gradient(180deg, rgb(63, 116, 63), rgb(197, 197, 103));
+    background-image: url("../../../assets/logo/prueba.jpg");
     min-height: 1000px;
     max-height: 2500px;
  

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { withFormik, Field, ErrorMessage, Form } from "formik";
-import "../../styles/Form.css";
 import { Link, useHistory } from "react-router-dom";
 import { Container, Grid, CssBaseline, Typography } from "@material-ui/core";
-import Login from './../../../../assets/logo/image.png'
+import welcome from './../../../../assets/logo/image.png'
 import Navs from '../../../layouts/Navs'
 import Logo from '../../../layouts/Logo'
-import Perrito from './../../../../assets/logo/mascot.png'
+import "../../../home/styles/Home.css";
+
 import { RepositoryFactory } from "./../../../../repositories/RepositoryFactory";
 import jwt_decode from "jwt-decode";
 import {
@@ -110,7 +110,7 @@ function MyForm(props) {
       <Navs />
 
 
-      <Grid className="padre">
+      <Grid className="login">
         <Grid xs={12} sm={12} >
           <p className="lead text-center"> <Logo /></p>
         </Grid>
@@ -123,7 +123,7 @@ function MyForm(props) {
 
             <div className="ml-1">
 
-              < img height="300" src={Login} />
+              < img height="300" src={welcome} />
 
             </div>
 
@@ -188,7 +188,7 @@ function MyForm(props) {
         </Grid>{" "}
 
 
-      </Grid>{" "}
+      </Grid>
 
     </Form>
   );
