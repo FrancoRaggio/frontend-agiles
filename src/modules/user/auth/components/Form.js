@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { withFormik, Field, ErrorMessage, Form } from "formik";
-import "../../styles/Form.css";
 import { Link, useHistory } from "react-router-dom";
 import { Container, Grid, CssBaseline, Typography } from "@material-ui/core";
+import welcome from './../../../../assets/logo/image.png'
+import Navs from '../../../layouts/Navs'
+import Logo from '../../../layouts/Logo'
+import "../../../home/styles/Home.css";
+
 import { RepositoryFactory } from "./../../../../repositories/RepositoryFactory";
 import jwt_decode from "jwt-decode";
 import {
@@ -13,11 +17,12 @@ import {
 } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { green } from "@material-ui/core/colors";
-import Logo from "../../../../assets/logo/logo.png";
+
 
 const authRepository = RepositoryFactory.get("auth");
 
 const useStyles = makeStyles((theme) => ({
+
   root: {
     width: "100%",
   },
@@ -102,14 +107,31 @@ function MyForm(props) {
 
   return (
     <Form className={classes.root}>
-      <Grid className="padre">
+      <Navs />
+
+
+      <Grid className="login">
+        <Grid xs={12} sm={12} >
+          <p className="lead text-center"> <Logo /></p>
+        </Grid>
+
+
+
         <Grid className={["hijo", classes.hijo]}>
+
           <Container container>
-            <div className="ml-4">
-              <img src={Logo} alt="Logo" width="250" height="150" />
+
+            <div className="ml-1">
+
+              < img height="300" src={welcome} />
+
             </div>
+
+
             <Grid xs={12} sm={12}>
-              Usuario / email{""}
+              <strong>
+                Usuario / email{""}
+              </strong>
               <Field
                 name="email"
                 type="email"
@@ -122,7 +144,9 @@ function MyForm(props) {
               </ErrorMessage>{" "}
             </Grid>
             <Grid xs={12} sm={12}>
-              Contraseña{" "}
+              <strong>
+                Contraseña{" "}
+              </strong>
               <Field
                 name="password"
                 type="password"
@@ -134,8 +158,10 @@ function MyForm(props) {
                 {(message) => <div className="error"> {message} </div>}{" "}
               </ErrorMessage>{" "}
             </Grid>
+
             <br />
             <Grid xs={12} sm={12}>
+
               <div>
                 <ThemeProvider theme={theme}>
                   <Button
@@ -146,15 +172,24 @@ function MyForm(props) {
                     disabled={isSubmitting || !isValid}
                     onClick={authForm}
                   >
-                    INICIAR SESION
+                    <strong>
+                      INICIAR SESION
+                    </strong>
                   </Button>
                 </ThemeProvider>
               </div>
-              <Link to={"/register"}>Registrarse</Link>
+              <Link to={"/register"}> <strong>Registrarse </strong></Link>
             </Grid>{" "}
+
+
           </Container>
+
+
         </Grid>{" "}
-      </Grid>{" "}
+
+
+      </Grid>
+
     </Form>
   );
 }

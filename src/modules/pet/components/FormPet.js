@@ -1,23 +1,25 @@
 import React from 'react'
 
+
 const FormPet = (props) => {
 
   const customColumnStyle = { width: 200 }
 
   return (
     <form>
-      <div class="form-row">
-        <div class="form-group col-md-3">
+        <div>
+          <div class="row">
           <label style={customColumnStyle} for="inputEmail5" ><strong>Nombre</strong></label>
-          <input style={customColumnStyle} type="email" class="form-control" id="inputEmail4" />
+          <input style={customColumnStyle} type="email" class="form-control" id="inputEmail4" rows="3" />
         </div>
-        <div class="form-group col-md-3">
+        <div >
           <label style={customColumnStyle} for="inputPassword4" ><strong>Collar/etiqueta</strong></label>
           <input style={customColumnStyle} type="password" class="form-control" id="inputPassword4" />
         </div>
-        <div class="form-group col-md-3">
+        <div id="tipodemascota">
+          
           <label style={customColumnStyle} for="inputState"><strong>Tipo de mascota</strong></label>
-          <select style={customColumnStyle} id="inputState" class="form-control">
+          <select style={customColumnStyle} id="inputState4" class="form-control" rows="4">
             <option selected>...</option>
 
             <option>Gato</option>
@@ -29,14 +31,10 @@ const FormPet = (props) => {
             <option>Tortuga</option>
             <option>Roedor</option>
           </select>
+        
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-3">
-          <label style={customColumnStyle} for="inputAddress" ><strong>Raza</strong></label>
-          <input style={customColumnStyle} type="text" class="form-control" id="inputAddress" placeholder="..." />
-        </div>
-        <div class="form-group col-md-3">
+      
+        <div id="color">
           <label style={customColumnStyle} for="inputState"><strong>Color</strong></label>
           <select style={customColumnStyle} id="inputState" class="form-control">
             <option selected>...</option>
@@ -46,6 +44,13 @@ const FormPet = (props) => {
             <option>otro</option>
           </select>
         </div>
+      
+      <div class="row">
+        <div class="form-group col-md-9">
+          <label style={customColumnStyle} for="inputAddress" ><strong>Raza</strong></label>
+          <input style={customColumnStyle} type="text" class="form-control" id="inputAddress" placeholder="..." />
+        </div>
+      
 
         <div class="form-group col-md-3">
           <label style={customColumnStyle} for="inputState"><strong>Tamaño</strong></label>
@@ -97,6 +102,7 @@ const FormPet = (props) => {
       <div class="form-group col-md-9">
         <button type="button" class="btn btn-primary btn-sm">Cancelar</button>
         <button type="button" class="btn btn-secondary btn-sm">Publicar</button>
+      </div>
       </div>
 
     </form >

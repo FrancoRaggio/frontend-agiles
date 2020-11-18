@@ -1,12 +1,19 @@
 .padre {
-    background: linear-gradient(180deg, rgba(201, 138, 3, 0.562), rgb(90, 133, 90), rgb(233, 233, 189));
+    background-image: url("../../../assets/logo/probando.jpg");
+    min-height: 1200px;
+    max-height: 2500px;
+}
+.login {
+    background-image: url("../../../assets/logo/fondo.png");
     min-height: 1200px;
     max-height: 2500px;
 
 }
 
 .about {
-    background: linear-gradient(180deg, rgba(201, 138, 3, 0.562), rgb(90, 133, 90), rgb(233, 233, 189));
-    min-height: 900px;
+    background-image: url("../../../assets/logo/prueba.jpg");
+    min-height: 1000px;
     max-height: 2500px;
+ 
 }
+

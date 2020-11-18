@@ -10,7 +10,6 @@ import Footer from "./modules/layouts/Footer";
 import Advert from "./modules/home/pages/Advert ";
 import AddPet from "./modules/pet/pages/AddPet";
 import RemovePet from "./modules/home/pages/RemovePet";
-import "../src/modules/home/styles/Home.css";
 import "../src/modules/user/styles/Profile.css";
 import Profile from "./modules/user/auth/pages/Profile";
 import Navs from '../src/modules/layouts/Navs'

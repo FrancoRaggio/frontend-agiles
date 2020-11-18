@@ -1,5 +1,5 @@
 div#fondo {
-    background: linear-gradient(180deg, rgba(201, 138, 3, 0.562), rgb(90, 133, 90), rgb(233, 233, 189));
+    background-image: url("../../../assets/logo/probando.jpg");
     height: 1200px;
  
 }
@@ -7,7 +7,7 @@ div#fondo {
 div#perfil {
     margin-top: 50px;
     margin-left: 100px;
-    background-color:  rgba(15, 11, 0, 0.562);
+    background-color: rgb(184, 152, 66);
     width: 1200px;
     height: 320px;
 
@@ -16,13 +16,13 @@ div#perfil {
 div#datos {
     text-align: left;
     margin-top: -150px;
-    margin-left: 350px;
+    margin-left: 400px;
     
 }
 div#perfil1 {
     margin-top: 300px;
     margin-left: 100px;
-    background-color: rgba(15, 11, 0, 0.562);
+    background-color: rgb(184, 152, 66);
     width: 1200px;
     height: 550px;
 

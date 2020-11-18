@@ -14,6 +14,7 @@ import Card from '../../../layouts/Card'
 import data from '../pages/data.json'
 import EditButton from '../components/EditButton'
 
+
 const info = data
 
 const useStyles = makeStyles((theme) => ({

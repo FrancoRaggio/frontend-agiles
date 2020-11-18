@@ -7,6 +7,7 @@ import Perro from '../../../assets/logo/Perros.png'
 import Navs from '../../layouts/Navs'
 import Map from '../../map/pages/Map.js'
 
+
 const AddPet = () => {
 
     const [open, setOpen] = useState(false);
