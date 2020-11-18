@@ -16,7 +16,8 @@ const Navs = ({ setPosts, posts }) => {
 
     const fuse = new Fuse(posts, {
       keys: [
-        "title"
+        "title",
+        "race"
       ],
       includeScore: true
     })

@@ -13,9 +13,13 @@ import RemovePet from "./modules/home/pages/RemovePet";
 import "../src/modules/home/styles/Home.css";
 import "../src/modules/user/styles/Profile.css";
 import Profile from "./modules/user/auth/pages/Profile";
+import Navs from '../src/modules/layouts/Navs'
+import Logo from './modules/layouts/Logo'
+import { Grid, Container } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+
   return (
     <div className="App">
       <Router>

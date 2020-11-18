@@ -60,6 +60,7 @@ export default function RecipeReviewCard({item}) {
         }
         title={item.title}
         subheader={item.date}
+        
       />
       <CardMedia
         className={classes.media}
@@ -67,6 +68,9 @@ export default function RecipeReviewCard({item}) {
         title="Paella dish"
       />
       <CardContent>
+        <Typography variant="body2" color="Black" component="p">
+          {item.race}
+        </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
         {item.description}
         </Typography>
