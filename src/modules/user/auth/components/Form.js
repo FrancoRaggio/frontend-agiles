@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   hijo: {
     alignContent: "center",
+    marginRight: 3
   },
 }));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

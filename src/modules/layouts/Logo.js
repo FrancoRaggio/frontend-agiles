@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom";
 class Logo extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{ zIndex: 99 }}>
                 <Link to={'/'}><img height="200" src={logoimg} /></Link>
             </div>
         )

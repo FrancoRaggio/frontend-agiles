@@ -7,19 +7,18 @@
 }
 
 .hijo {
-    background:rgba(110, 91, 62, 0.904);
+    background: rgba(110, 91, 62, 0.904);
     min-height: 700px;
     max-height: 1000px;
     width: 700px;
     position: absolute;
     top: 40%;
     left: 38%;
-    margin-top: -100px;
-    margin-left: -100px;
+    margin-top: -70px;
+    margin-left: -180px;
     border-radius: 15px 15px 15px 15px;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
-
 }
 
 .row {
@@ -43,5 +42,4 @@
     font-size: 1rem;
     width: 100%;
     box-shadow: 0 1px 4px 0 rgba(22, 24, 26, 0.15);
-
 }

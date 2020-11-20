@@ -107,7 +107,7 @@ export default function CustomizedTimeline() {
 
               <Typography>Caceres, Solange <CheckIcon /></Typography>
               <Typography>Chemin, Juan Cruz<CheckIcon /></Typography>
-              <Typography>Gira, Martin<CheckIcon /></Typography>
+              <Typography>Tito Gira, Martin<CheckIcon /></Typography>
               <Typography>Guasch, Lautaro<CheckIcon /></Typography>
               <Typography>Raggio, Franco<CheckIcon /></Typography>
             </Paper>
